@@ -1,0 +1,24 @@
+% import "bootstrap/wtf.html" as wtf %}
+{% block title %}Assign An Employee{% endblock %}
+{% block body %}
+<div class="content-section">
+ <div class="outer">
+    <div class="middle">
+      <div class="inner">
+        <div class="center">
+            <h1> Assign A Department and Role</h1>
+            <br/>
+            <p>
+                Select a department and a role to assign
+                <span style="color: #aec251;">
+                    {{ employee.first_name }} {{ employee.last_name }}
+                </span>
+            </p>
+            <br/>
+            {{ wtf.quick_form(form) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
